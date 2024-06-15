@@ -25,7 +25,7 @@ This project demonstrates the use of the `<marquee>` tag in HTML along with CSS 
 
 Here's a preview of what the project looks like:
 
-[Website](link)
+[Website](https://devender-008.github.io/Marquee-Exaple/)
 
 ## Contributing
 
