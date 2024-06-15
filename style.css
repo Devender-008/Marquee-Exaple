@@ -1,0 +1,82 @@
+/* Basic resets */
+body, h1, marquee, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #61dafb;
+}
+
+.marquee {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #444;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.marquee-vertical {
+    height: 100px;
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #444;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.custom-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #444;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
